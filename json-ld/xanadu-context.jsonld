@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://schema.org/",
+    "xanadu": "https://xanadu.ai/ns/",
+    "pennylane": "https://pennylane.ai/ns/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+
+    "Device": {
+      "@id": "pennylane:Device",
+      "@context": {
+        "name": {
+          "@id": "pennylane:Device/name",
+          "@type": "xsd:string"
+        },
+        "shortName": {
+          "@id": "pennylane:Device/shortName",
+          "@type": "xsd:string"
+        },
+        "wires": {
+          "@id": "pennylane:Device/wires",
+          "@type": "xsd:integer"
+        },
+        "shots": {
+          "@id": "pennylane:Device/shots",
+          "@type": "xsd:integer"
+        },
+        "plugin": {
+          "@id": "pennylane:Device/plugin",
+          "@type": "xsd:string"
+        },
+        "backend": {
+          "@id": "pennylane:Device/backend",
+          "@type": "xsd:string"
+        },
+        "supportsGradient": {
+          "@id": "pennylane:Device/supportsGradient",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "QuantumCircuit": {
+      "@id": "pennylane:QuantumCircuit",
+      "@context": {
+        "id": {
+          "@id": "pennylane:QuantumCircuit/id",
+          "@type": "xsd:string"
+        },
+        "device": {
+          "@id": "pennylane:QuantumCircuit/device",
+          "@type": "pennylane:Device"
+        },
+        "operations": {
+          "@id": "pennylane:QuantumCircuit/operations",
+          "@container": "@list"
+        },
+        "measurements": {
+          "@id": "pennylane:QuantumCircuit/measurements",
+          "@container": "@list"
+        },
+        "interface": {
+          "@id": "pennylane:QuantumCircuit/interface",
+          "@type": "xsd:string"
+        },
+        "diffMethod": {
+          "@id": "pennylane:QuantumCircuit/diffMethod",
+          "@type": "xsd:string"
+        }
+      }
+    },
+
+    "PhotonicProgram": {
+      "@id": "xanadu:PhotonicProgram",
+      "@context": {
+        "id": {
+          "@id": "xanadu:PhotonicProgram/id",
+          "@type": "xsd:string"
+        },
+        "language": {
+          "@id": "xanadu:PhotonicProgram/language",
+          "@type": "xsd:string"
+        },
+        "modes": {
+          "@id": "xanadu:PhotonicProgram/modes",
+          "@type": "xsd:integer"
+        },
+        "operations": {
+          "@id": "xanadu:PhotonicProgram/operations",
+          "@container": "@list"
+        },
+        "target": {
+          "@id": "xanadu:PhotonicProgram/target",
+          "@type": "xsd:string"
+        }
+      }
+    }
+  }
+}

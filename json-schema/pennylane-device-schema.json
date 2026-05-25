@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/xanadu/refs/heads/main/json-schema/pennylane-device-schema.json",
+  "title": "PennyLane Device",
+  "description": "Logical description of a PennyLane device — the executable target for a quantum circuit. PennyLane devices abstract simulators (default.qubit, lightning.qubit, lightning.gpu, default.mixed) and hardware backends (IBM Q, IonQ, Rigetti, AWS Braket, Strawberry Fields) behind a single interface.",
+  "type": "object",
+  "required": ["name", "wires"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Fully qualified device name, e.g. 'default.qubit', 'lightning.gpu', 'strawberryfields.gaussian'."
+    },
+    "shortName": {
+      "type": "string",
+      "description": "Human-readable short name."
+    },
+    "plugin": {
+      "type": "string",
+      "description": "PennyLane plugin providing the device, e.g. 'pennylane-lightning', 'pennylane-qiskit'."
+    },
+    "wires": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of qubits or photonic modes exposed by the device."
+    },
+    "shots": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "Number of measurement shots. Null indicates analytic (exact-expectation) execution where supported."
+    },
+    "backend": {
+      "type": "string",
+      "description": "Underlying backend identifier (for plugins that wrap multiple hardware/simulator targets)."
+    },
+    "supportsGradient": {
+      "type": "boolean",
+      "description": "Whether the device supports a native (e.g. parameter-shift, adjoint, backprop) gradient method."
+    },
+    "diffMethods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["best", "backprop", "adjoint", "parameter-shift", "finite-diff", "spsa", "hadamard", "device"]
+      },
+      "description": "List of differentiation methods supported by the device."
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Free-form capability map returned by the device (model, returns_state, returns_probs, supports_finite_shots, etc.)."
+    }
+  },
+  "additionalProperties": false
+}
