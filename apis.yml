@@ -18,11 +18,11 @@ apis:
   - url: https://github.com/PennyLaneAI/pennylane
     type: GitHubRepository
   - url: https://pypi.org/project/PennyLane/
-    type: SDK
+    type: SDKs
   - url: https://pennylane.ai/qml/demonstrations/
     type: CodeExamples
   - url: https://discuss.pennylane.ai/
-    type: Forum
+    type: Forums
   - url: json-schema/pennylane-device-schema.json
     type: JSONSchema
   - url: json-ld/xanadu-context.jsonld
@@ -47,7 +47,7 @@ apis:
   - url: https://github.com/PennyLaneAI/catalyst
     type: GitHubRepository
   - url: https://pypi.org/project/PennyLane-Catalyst/
-    type: SDK
+    type: SDKs
   description: Catalyst is a JIT compiler for hybrid quantum-classical programs written in PennyLane. Built on
     MLIR, it lowers PennyLane circuits to native machine code with quantum control flow, dynamic shapes, and
     differentiable hybrid execution. Apache-2.0.
@@ -66,7 +66,7 @@ apis:
   - url: https://github.com/PennyLaneAI/pennylane-lightning
     type: GitHubRepository
   - url: https://pypi.org/project/PennyLane-Lightning/
-    type: SDK
+    type: SDKs
   description: Lightning is the family of high-performance state-vector and tensor-network quantum simulators
     written in C++ for PennyLane. Includes lightning.qubit (CPU), lightning.gpu (CUDA), lightning.kokkos
     (multi-architecture), and lightning.tensor backends for accelerated circuit simulation on laptops, GPUs, and
@@ -86,7 +86,7 @@ apis:
   - url: https://github.com/XanaduAI/strawberryfields
     type: GitHubRepository
   - url: https://pypi.org/project/StrawberryFields/
-    type: SDK
+    type: SDKs
   description: Strawberry Fields is Xanadu's full-stack Python library for designing, simulating, and optimizing
     continuous-variable (CV) photonic quantum circuits. It ships Gaussian, Fock, TensorFlow, and Bosonic backends
     plus end-to-end differentiation for training photonic quantum programs across graph optimization, machine
@@ -106,7 +106,7 @@ apis:
   - url: https://github.com/XanaduAI/MrMustard
     type: GitHubRepository
   - url: https://pypi.org/project/mrmustard/
-    type: SDK
+    type: SDKs
   description: MrMustard is a differentiable quantum-optics simulator that bridges phase space and Fock space with
     pluggable NumPy and JAX backends. It performs fast exact Fock-amplitude computation for Gaussian components
     and supports built-in Riemannian optimization, making it the modern successor to parts of Strawberry Fields
@@ -126,7 +126,7 @@ apis:
   - url: https://github.com/XanaduAI/thewalrus
     type: GitHubRepository
   - url: https://pypi.org/project/thewalrus/
-    type: SDK
+    type: SDKs
   description: The Walrus is a Python/C++ library for the fast calculation of hafnians, loop hafnians, and
     multidimensional Hermite polynomials — the linear-algebra primitives behind Gaussian boson sampling and
     photonic quantum state characterization. Apache-2.0; published in the Journal of Open Source Software (2019).
@@ -145,7 +145,7 @@ apis:
   - url: https://github.com/XanaduAI/blackbird
     type: GitHubRepository
   - url: https://pypi.org/project/quantum-blackbird/
-    type: SDK
+    type: SDKs
   description: Blackbird is Xanadu's quantum assembly language and intermediate representation for
     continuous-variable photonic quantum computation. It is used to program Xanadu's photonic hardware (X-series,
     Borealis, Aurora) and the Strawberry Fields simulator. Apache-2.0.
@@ -164,7 +164,7 @@ apis:
   - url: https://github.com/PennyLaneAI/pennylane-qiskit
     type: GitHubRepository
   - url: https://pypi.org/project/PennyLane-qiskit/
-    type: SDK
+    type: SDKs
   description: PennyLane plugin that integrates IBM's Qiskit framework and IBM Q hardware as PennyLane devices for
     differentiable quantum programming. Apache-2.0.
 - aid: xanadu:flamingpy
@@ -196,7 +196,7 @@ apis:
   - url: https://github.com/XanaduAI/xanadu-cloud-client
     type: GitHubRepository
   - url: https://pypi.org/project/xanadu-cloud-client/
-    type: SDK
+    type: SDKs
   description: Xanadu Cloud Client (xcc) is the Python API and CLI that historically connected users to Xanadu's
     photonic quantum cloud (Borealis, X-series). Xanadu's Quantum Cloud was retired in January 2026 and the
     project is archived; the client remains a useful reference for Blackbird job submission patterns.
@@ -243,7 +243,7 @@ common:
   type: YouTube
 - url: https://discuss.pennylane.ai/
   name: PennyLane Discussion Forum
-  type: Forum
+  type: Forums
 - url: https://pennylane.ai/qml/
   name: Quantum Machine Learning Hub
   type: Training
