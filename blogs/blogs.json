@@ -3,18 +3,19 @@
   "feeds": [
     {
       "source": "https://xanadu.ai/blog",
-      "feed_url": "",
+      "feed_url": "https://xanadu.ai/blog",
+      "title": "",
       "saved": 0,
-      "error": "no post listings returned from HTML"
+      "method": "none"
     },
     {
       "source": "https://pennylane.ai/blog",
-      "feed_url": "",
+      "feed_url": "https://pennylane.ai/blog",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape"
+      "method": "none"
     }
   ],
   "post_count": 2,
-  "fetched": "2026-06-27T13:22:19Z",
-  "agent_pulled": "2026-06-27"
+  "fetched": "2026-07-11T11:50:51Z"
 }
