@@ -6,6 +6,12 @@ apis:
   tags:
   - Quantum Computing
   - Quantum Machine Learning
+  - Open-Source
+  - Python
+  - Automatic Differentiation
+  tags_raw:
+  - Quantum Computing
+  - Quantum Machine Learning
   - Open Source
   - Python
   - Automatic Differentiation
@@ -39,6 +45,12 @@ apis:
   - Compiler
   - JIT
   - MLIR
+  - Open-Source
+  tags_raw:
+  - Quantum Computing
+  - Compiler
+  - JIT
+  - MLIR
   - Open Source
   humanURL: https://docs.pennylane.ai/projects/catalyst/en/stable/
   properties:
@@ -54,6 +66,12 @@ apis:
 - aid: xanadu:pennylane-lightning
   name: PennyLane Lightning
   tags:
+  - Quantum Computing
+  - Simulator
+  - High Performance
+  - GPU
+  - Open-Source
+  tags_raw:
   - Quantum Computing
   - Simulator
   - High Performance
@@ -78,6 +96,12 @@ apis:
   - Photonic
   - Continuous Variable
   - Simulator
+  - Open-Source
+  tags_raw:
+  - Quantum Computing
+  - Photonic
+  - Continuous Variable
+  - Simulator
   - Open Source
   humanURL: https://strawberryfields.readthedocs.io/en/stable/
   properties:
@@ -94,6 +118,12 @@ apis:
 - aid: xanadu:mrmustard
   name: MrMustard
   tags:
+  - Quantum Computing
+  - Photonic
+  - Quantum Optics
+  - Simulator
+  - Open-Source
+  tags_raw:
   - Quantum Computing
   - Photonic
   - Quantum Optics
@@ -118,6 +148,12 @@ apis:
   - Photonic
   - Gaussian Boson Sampling
   - Hafnian
+  - Open-Source
+  tags_raw:
+  - Quantum Computing
+  - Photonic
+  - Gaussian Boson Sampling
+  - Hafnian
   - Open Source
   humanURL: https://the-walrus.readthedocs.io/
   properties:
@@ -133,6 +169,12 @@ apis:
 - aid: xanadu:blackbird
   name: Blackbird
   tags:
+  - Quantum Computing
+  - Photonic
+  - Assembly Language
+  - DSL
+  - Open-Source
+  tags_raw:
   - Quantum Computing
   - Photonic
   - Assembly Language
@@ -156,6 +198,12 @@ apis:
   - Plugin
   - Qiskit
   - IBM Q
+  - Open-Source
+  tags_raw:
+  - Quantum Computing
+  - Plugin
+  - Qiskit
+  - IBM Q
   - Open Source
   humanURL: https://docs.pennylane.ai/projects/qiskit/
   properties:
@@ -170,6 +218,12 @@ apis:
 - aid: xanadu:flamingpy
   name: FlamingPy
   tags:
+  - Quantum Computing
+  - Error Correction
+  - Fault Tolerance
+  - Simulator
+  - Open-Source
+  tags_raw:
   - Quantum Computing
   - Error Correction
   - Fault Tolerance
@@ -202,6 +256,16 @@ apis:
     project is archived; the client remains a useful reference for Blackbird job submission patterns.
 name: Xanadu
 tags:
+- Quantum Computing
+- Photonic Quantum Computing
+- Quantum Machine Learning
+- Continuous Variable
+- Open-Source
+- Python
+- PennyLane
+- Strawberry Fields
+- Toronto
+tags_raw:
 - Quantum Computing
 - Photonic Quantum Computing
 - Quantum Machine Learning
