@@ -42,7 +42,7 @@ apis:
   name: Catalyst
   tags:
   - Quantum Computing
-  - Compiler
+  - Compilers
   - JIT
   - MLIR
   - Open-Source
@@ -195,7 +195,7 @@ apis:
   name: PennyLane-Qiskit Plugin
   tags:
   - Quantum Computing
-  - Plugin
+  - Plugins
   - Qiskit
   - IBM Q
   - Open-Source
